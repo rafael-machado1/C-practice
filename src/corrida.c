@@ -23,7 +23,15 @@ respectivamente, o número de metros que Leonardo pretende correr e o compriment
 #include <stdio.h>
 
 int main() {
+  int C,N;
+  int pontoTermino;
 
+  // Número de metros C / Comprimento da pista N
+  scanf("%d%d",&C,&N);
 
-  
+  pontoTermino = N % C;
+  printf("%d",pontoTermino);
+
+  return 0;
+
 }
