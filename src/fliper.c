@@ -33,18 +33,17 @@ duas portinhas do flíper da figura.
 int main() {
   int P,R;
 
+  // P (0,1) / R (0,1)
+  // 0: Esquerda / 1: Direita
   scanf("%d%d",&P,&R);
 
-  if(P == 0 && R == 0){
+  if(P == 0 && (R == 0 || R == 1)){
     printf("C\n");
   } else if (P == 1 && R == 1){
     printf("A\n");
   } else if (P == 1 && R == 0){
     printf("B\n");
-  } else if (P == 0 && R == 1){
-    printf("A\n");
   }
-
 
   return 0;
 
